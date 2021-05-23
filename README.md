@@ -1,2 +1,3 @@
 # Front-end-Course
-BC14_BaiHTML(KFC)_TieuAnhQuoc
+Cybersoft Front-end course
+Tieu Anh Quoc
