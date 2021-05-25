@@ -1,0 +1,107 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #F8E1DB;
+}
+.clear{
+	clear: both;
+}
+/* Header */
+.header{
+	/* top-bottom: right-left */
+	padding: 10px 70px;
+}
+/*  */
+.header ul{
+	/* B1 xóa dấu chấm tròn trong danh sách */
+	list-style: none;
+}
+.header a{
+	/* B2 xóa dấu gạch dưới thẻ a và chỉnh màu thẻ */
+	text-decoration: none;
+	color: black;
+}
+.header li{
+	/* B3 xử lí các thẻ li nằm trên 1 dòng chuyển tính chất
+	từ block => inline */
+	display: inline;
+	margin-right: 20px;
+/* 	Khoảng cách từ border đến content(nội dung)
+	content: text và các thẻ con của thẻ đó
+	padding: 15px;
+	border: 3px solid red; */
+}
+/* CAROUSEL */
+.carousel{
+	background-image: url(./img/BG.png);
+	height: 550px;
+	background-size: cover;
+	background-position: center;
+	/* vi trí top-left top-right bottom-left bottom-right*/
+	border-radius: 0 0 200px 200px;
+	position: relative;
+}
+.carousel__content{
+	position: absolute;
+	left: 0;
+	bottom: -70px;
+}
+.carousel__item{
+	float: left;
+	width: 25%;
+	padding: 0 20px;
+	
+}
+.carousel__mid{
+	background-color: white;
+	margin: 0 20px;
+	border-radius: 20px;
+	
+}
+/* ACTIVITES */
+.activities{
+	padding-top: 155px;
+}
+.activities__item{
+	float: left;
+	width: 25%;
+	padding: 0 20px;
+	text-align: center;
+}
+.activities__mid{
+	background-color: white;
+	padding: 25px;
+}
+.activities__bottom button{
+	padding: 10px 15px;
+	border: 1px solid grey;
+	color: white;
+	background-color: grey;
+	border-radius: 50px;
+	cursor: pointer;
+}
+.activities__view{
+	text-align: center;
+}
+.activities__top{
+	position: relative;
+}
+.activities__top img{
+	width: 100%;
+}
+.activities__top i{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: red;
+	font-size: 30px;
+	width: 80px;
+	height: 80px;
+	/* căn giữa chiều dọc */
+	line-height: 80px;
+	/* rgba */
+	background-color: rgba(255, 255, 0, 0.5);
+}
