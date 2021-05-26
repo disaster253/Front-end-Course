@@ -87,6 +87,15 @@ body{
 .activities__view{
 	text-align: center;
 }
+.activities__view button{
+	border: 1px solid orangered;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 10%;
+    background: #F8E1DB;
+    color: red;
+    text-decoration: none;
+}
 .activities__top{
 	position: relative;
 }
