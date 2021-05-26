@@ -53,7 +53,7 @@ body{
 	float: left;
 	width: 25%;
 	padding: 0 20px;
-	
+	text-align: center;
 }
 .carousel__mid{
 	background-color: white;
@@ -64,11 +64,12 @@ body{
 /* ACTIVITES */
 .activities{
 	padding-top: 155px;
+	text-align: center;
 }
 .activities__item{
 	float: left;
 	width: 25%;
-	padding: 0 20px;
+	padding: 20px 20px;
 	text-align: center;
 }
 .activities__mid{
@@ -91,17 +92,18 @@ body{
 }
 .activities__top img{
 	width: 100%;
+	border-radius: 15px;
 }
 .activities__top i{
 	position: absolute;
 	top: 10px;
 	right: 10px;
-	color: red;
-	font-size: 30px;
-	width: 80px;
-	height: 80px;
+	color: rgb(221, 61, 88);
+	font-size: 15px;
+	width: 30px;
+	height: 30px;
 	/* căn giữa chiều dọc */
-	line-height: 80px;
+	line-height: 30px;
 	/* rgba */
-	background-color: rgba(255, 255, 0, 0.5);
+	background-color: rgba(241, 241, 224, 0.5);
 }
