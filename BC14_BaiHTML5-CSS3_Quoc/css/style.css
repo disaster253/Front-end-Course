@@ -6,13 +6,28 @@
 }
 html,body{
 	font-family: 'Oswald', sans-serif;
+	/* font-size: 18px; */
+	/* nếu không khai báo font-size thì 1rem = 16px */
 }
 /* HEADER */
 header{
 	background-color: black;
+	padding: 20px 0;
+}
+.header__content{
+	width: 70%;
+	/* lấy 30% còn lại và tự chia đôi left 15% right 15% */
+	margin: 0 auto;
+	/* flexbox kiếm thằng cha gần nhất*/
+	/* lên chung 1 hàng */
+	display: flex; 
+	/* justify-content thêm khoảng trắng cho các thẻ con của flex */
+	justify-content: space-around;
+	align-items: center;
 }
 .header__content p{
 	color: white;
+	font-size: 2rem;
 }
 .header__content li{
 	list-style: none;
