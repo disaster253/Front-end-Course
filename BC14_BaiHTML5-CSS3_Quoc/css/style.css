@@ -11,8 +11,12 @@ html,body{
 }
 /* HEADER */
 header{
-	background-color: black;
 	padding: 20px 0;
+	/* position: absolute làm mất kích thước thẻ */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
 .header__content{
 	width: 70%;
@@ -23,6 +27,7 @@ header{
 	display: flex; 
 	/* justify-content thêm khoảng trắng cho các thẻ con của flex */
 	justify-content: space-around;
+	/* align-items: căn chỉnh chiều dọc nội dung chữ của thẻ */
 	align-items: center;
 }
 .header__content p{
@@ -37,4 +42,31 @@ header{
 	text-decoration: none;
 	color: white;
 	
+}
+/* CAROUSEL */
+.carousel{
+	background-image: url(../img/home_slider.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 650px;
+	text-align: center;
+	color: white;
+	/* căn giữa bằng flex */
+	/* c1: nếu thẻ cha flex chỉ có 1 con trực tiếp 
+	justify-content =>> căn giữa theo chiều ngang
+	align-items =>> căn giữa theo chiều dọc*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.carousel__content button{
+	padding: 10px 20px;
+	background-color: #e62b4a;
+	border: 1px solid #e62b4a;
+	color: white;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.carousel__content button:hover{
+	background-color: #af2249;
 }

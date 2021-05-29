@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 body{
-	background-color: #F8E1DB;
+	background-color: rgb(208, 215, 223);
 }
 .clear{
 	clear: both;
@@ -13,6 +13,7 @@ body{
 .header{
 	/* top-bottom: right-left */
 	padding: 10px 70px;
+	background-color: #F8E1DB;
 }
 /*  */
 .header ul{
@@ -62,6 +63,10 @@ body{
 	padding: 20px;
 	height: 200px;
 }
+.carousel__mid img{
+	height: 85px;
+	width: 85px;
+}
 /* ACTIVITES */
 .activities{
 	padding-top: 155px;
@@ -81,8 +86,8 @@ body{
 .activities__bottom button{
 	padding: 10px 15px;
 	border: 1px solid grey;
-	color: white;
-	background-color: grey;
+	color: grey;
+	background-color: transparent;
 	border-radius: 50px;
 	margin-top: 20px;
 	cursor: pointer;
@@ -95,9 +100,10 @@ body{
     padding: 10px 20px;
     border-radius: 20px;
     width: 10%;
-    background: #F8E1DB;
+	background-color: rgb(208, 215, 223);
     color: red;
     text-decoration: none;
+	margin: 20px ;
 }
 .activities__top{
 	position: relative;
@@ -110,7 +116,7 @@ body{
 	position: absolute;
 	top: 10px;
 	right: 10px;
-	color: rgb(221, 61, 88);
+	color: #e76f51;
 	font-size: 15px;
 	width: 30px;
 	height: 30px;
@@ -118,5 +124,45 @@ body{
 	/* căn giữa chiều dọc */
 	line-height: 30px;
 	/* rgba */
-	background-color: rgba(241, 241, 224, 0.5);
+	background-color: rgba(255, 255, 255, 0.7);
+	cursor: pointer;
+}
+/* CONTACT */
+.contact{
+	background-color: #F8E1DB;
+	border-radius: 20px;
+	margin-bottom: 100px;
+	overflow: hidden;
+}
+.contact__left,.contact__right{
+	float: left;
+	width: 50%;
+	padding: 20px 60px;
+}
+.contact__left{
+	background: url(./img/mask.png);
+	background-size: cover;
+	background-position: center;
+}
+.contact__right{
+	padding-top: 70px;
+}
+.contact__right p{
+	margin: 12px 0 30px;
+}
+.contact__right h3{
+	margin-bottom: 21px;
+}
+.contact__app,.contact__us{
+	float: left;
+	width: 50%;
+}
+.contact__app img{
+	width: 145px;
+	display: inline;
+}
+.contact__us i{
+	color: #e76f51;
+	font-size: 25px;
+	margin-right: 10px;
 }
