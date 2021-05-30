@@ -1,3 +1,4 @@
+/* GLOBAL */
 *{
 	margin: 0;
 	padding: 0;
@@ -67,6 +68,9 @@ body{
 	height: 85px;
 	width: 85px;
 }
+.carousel__mid h3, .carousel__mid p{
+	opacity: 0.6;
+}
 /* ACTIVITES */
 .activities{
 	padding-top: 155px;
@@ -86,8 +90,8 @@ body{
 .activities__bottom button{
 	padding: 10px 15px;
 	border: 1px solid grey;
-	color: grey;
-	background-color: transparent;
+	background-color: grey;
+	opacity: 0.6;
 	border-radius: 50px;
 	margin-top: 20px;
 	cursor: pointer;
@@ -104,6 +108,7 @@ body{
     color: red;
     text-decoration: none;
 	margin: 20px ;
+	cursor: pointer;
 }
 .activities__top{
 	position: relative;
@@ -126,6 +131,9 @@ body{
 	/* rgba */
 	background-color: rgba(255, 255, 255, 0.7);
 	cursor: pointer;
+}
+.activities__bottom h3,.activities__bottom p{
+	opacity: 0.5;
 }
 /* CONTACT */
 .contact{
@@ -158,11 +166,51 @@ body{
 	width: 50%;
 }
 .contact__app img{
-	width: 145px;
+	width: 130px;
 	display: inline;
 }
 .contact__us i{
 	color: #e76f51;
 	font-size: 25px;
-	margin-right: 10px;
+	margin-right: 15px;
+}
+.contact__right h2,.contact__right p, .contact__app h3, .contact__us h3{
+	opacity: 0.5;
+}
+/* FOOTER */
+.footer{
+	background-color: #F8E1DB;
+	border-radius: 100px 100px 0 0 ;
+	padding: 100px 30px;
+	color: #3b3735;
+}
+.footer h3{
+	font-size: 18px;
+	margin-bottom: 21px;
+}
+.footer__about{
+	float: left;
+	width: 40%;
+	line-height: 28px;
+}
+.footer__list{
+	float: left;
+	width: 60%;
+	padding: 0 20px;
+}
+.footer__nav{
+	float: left;
+	width: 33%;
+}
+.footer__nav li{
+	list-style: none;
+	margin-bottom: 12px;
+}
+.footer__nav a{
+	text-decoration: none;
+	color: #3b3735;
+}
+.footer__copyright{
+	text-align: center;
+	padding-top: 30px;
 }
