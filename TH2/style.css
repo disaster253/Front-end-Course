@@ -1,0 +1,217 @@
+/* GLOBAL */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: rgb(208, 215, 223);
+}
+.clear{
+	clear: both;
+}
+/* Header */
+.header{
+	/* top-bottom: right-left */
+	padding: 10px 70px;
+	background-color: #F8E1DB;
+}
+/*  */
+.header ul{
+	/* B1 xóa dấu chấm tròn trong danh sách */
+	list-style: none;
+}
+.header a{
+	/* B2 xóa dấu gạch dưới thẻ a và chỉnh màu thẻ */
+	text-decoration: none;
+	color: black;
+}
+.header li{
+	/* B3 xử lí các thẻ li nằm trên 1 dòng chuyển tính chất
+	từ block => inline */
+	display: inline;
+	margin-right: 20px;
+/* 	Khoảng cách từ border đến content(nội dung)
+	content: text và các thẻ con của thẻ đó
+	padding: 15px;
+	border: 3px solid red; */
+}
+/* CAROUSEL */
+.carousel{
+	background-image: url(./img/BG.png);
+	height: 550px;
+	background-size: cover;
+	background-position: center;
+	/* vi trí top-left top-right bottom-left bottom-right*/
+	border-radius: 0 0 200px 200px;
+	position: relative;
+}
+.carousel__content{
+	position: absolute;
+	left: 0;
+	bottom: -70px;
+}
+.carousel__item{
+	float: left;
+	width: 25%;
+	padding: 0 20px;
+	text-align: center;
+}
+.carousel__mid{
+	background-color: white;
+	margin: 0 20px;
+	border-radius: 20px;
+	padding: 20px;
+	height: 200px;
+}
+.carousel__mid img{
+	height: 85px;
+	width: 85px;
+}
+.carousel__mid h3, .carousel__mid p{
+	opacity: 0.6;
+}
+/* ACTIVITES */
+.activities{
+	padding-top: 155px;
+	text-align: center;
+}
+.activities__item{
+	float: left;
+	width: 25%;
+	padding: 20px 20px;
+	text-align: center;
+}
+.activities__mid{
+	background-color: white;
+	padding: 25px;
+	border-radius: 15px;
+}
+.activities__bottom button{
+	padding: 10px 15px;
+	border: 1px solid grey;
+	background-color: grey;
+	opacity: 0.6;
+	border-radius: 50px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.activities__view{
+	text-align: center;
+}
+.activities__view button{
+	border: 1px solid orangered;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 10%;
+	background-color: rgb(208, 215, 223);
+    color: red;
+    text-decoration: none;
+	margin: 20px ;
+	cursor: pointer;
+}
+.activities__top{
+	position: relative;
+}
+.activities__top img{
+	width: 100%;
+	border-radius: 15px;
+}
+.activities__top i{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #e76f51;
+	font-size: 15px;
+	width: 30px;
+	height: 30px;
+	border-radius: 10px;
+	/* căn giữa chiều dọc */
+	line-height: 30px;
+	/* rgba */
+	background-color: rgba(255, 255, 255, 0.7);
+	cursor: pointer;
+}
+.activities__bottom h3,.activities__bottom p{
+	opacity: 0.5;
+}
+/* CONTACT */
+.contact{
+	background-color: #F8E1DB;
+	border-radius: 20px;
+	margin-bottom: 100px;
+	overflow: hidden;
+}
+.contact__left,.contact__right{
+	float: left;
+	width: 50%;
+	padding: 20px 60px;
+}
+.contact__left{
+	background: url(./img/mask.png);
+	background-size: cover;
+	background-position: center;
+}
+.contact__right{
+	padding-top: 70px;
+}
+.contact__right p{
+	margin: 12px 0 30px;
+}
+.contact__right h3{
+	margin-bottom: 21px;
+}
+.contact__app,.contact__us{
+	float: left;
+	width: 50%;
+}
+.contact__app img{
+	width: 130px;
+	display: inline;
+}
+.contact__us i{
+	color: #e76f51;
+	font-size: 25px;
+	margin-right: 15px;
+	cursor: pointer;
+}
+.contact__right h2,.contact__right p, .contact__app h3, .contact__us h3{
+	opacity: 0.5;
+}
+/* FOOTER */
+.footer{
+	background-color: #F8E1DB;
+	border-radius: 100px 100px 0 0 ;
+	padding: 100px 30px;
+	color: #3b3735;
+}
+.footer h3{
+	font-size: 18px;
+	margin-bottom: 21px;
+}
+.footer__about{
+	float: left;
+	width: 40%;
+	line-height: 28px;
+}
+.footer__list{
+	float: left;
+	width: 60%;
+	padding: 0 20px;
+}
+.footer__nav{
+	float: left;
+	width: 33%;
+}
+.footer__nav li{
+	list-style: none;
+	margin-bottom: 12px;
+}
+.footer__nav a{
+	text-decoration: none;
+	color: #3b3735;
+}
+.footer__copyright{
+	text-align: center;
+	padding-top: 30px;
+}
