@@ -114,21 +114,65 @@ a {
 	}
   }
 /* BANNER */
-.banner__content{
+.banner {
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 100%;
+	padding-top: 180px;
+	overflow: hidden;
+  }
+.banner__content {
 	display: flex;
-}
-.banner__left{
+  }
+.banner__left {
 	width: 60%;
-}
-.banner__right{
-	width: 40%;
-}
-.banner__media{
+	margin-top: 50px;
+	margin-right: 50px;
+  }
+.banner__left h6 {
+	font-size: 1.5rem;
+	color: #f55f8d;
+	margin-bottom: 20px;
+  }
+.banner__left h1 {
+	font-size: 4.5rem;
+	color: #262626;
+	line-height: 1;
+	margin-bottom: 20px;
+	font-weight: 800;
+  }
+.banner__left p {
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+  }
+.banner__left ul {
+	margin-bottom: 1.5rem;
+  }
+.banner__left li {
+	margin-bottom: 1rem;
+	font-size: 1.4rem;
+  }
+.banner__left li i {
+	background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 100%);
+	padding: 8px;
+	color: white;
+	font-weight: 600;
+	border-radius: 50%;
+	margin-right: 8px;
+  }
+.banner__right {
+	width: 40px;
 	position: relative;
-}
-.banner__media__overlay{
+  }
+.banner__img img {
+	display: block;
+  }
+.banner__overlay img {
 	position: absolute;
-}
+	top: -1%;
+	left: -8rem;
+	animation: animation__banner 5s infinite;
+  }
 @keyframes animation__banner {
 	0% {
 	  transform: rotate(1deg) translate(2px, 2px);
