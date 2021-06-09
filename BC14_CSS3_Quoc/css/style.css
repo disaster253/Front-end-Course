@@ -67,7 +67,7 @@ a {
   }
 .header__nav > ul > li:hover > a {
 	color: #f55f8d;
-	animation: animation__nav 0.5s;
+	animation: nav 0.5s;
   }
 
 .header__nav li:hover {
@@ -85,7 +85,58 @@ a {
     transition: all 0.5s;
     background-size: 200%;
 }
+.get-quote__btn {
+	height: 130px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 1s;
+	margin-left: 1.5rem;
+  }
 .btn:hover{
 	background-position: right;
 }
+@keyframes nav {
+	0% {
+	  transform: translateY(0);
+	}
+	50% {
+	  transform: translateY(20px);
+	  opacity: 0;
+	}
+	51% {
+	  transform: translateY(-20px);
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
 /* BANNER */
+.banner__content{
+	display: flex;
+}
+.banner__left{
+	width: 60%;
+}
+.banner__right{
+	width: 40%;
+}
+.banner__media{
+	position: relative;
+}
+.banner__media__overlay{
+	position: absolute;
+}
+@keyframes animation__banner {
+	0% {
+	  transform: rotate(1deg) translate(2px, 2px);
+	}
+	50% {
+	  transform: rotate(-1deg) translate(-2px, -2px);
+	}
+	100% {
+	  transform: rotate(1deg) translate(2px, 2px);
+	}
+}
