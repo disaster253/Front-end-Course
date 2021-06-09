@@ -1,52 +1,91 @@
 /* GLOBAL */
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* BODY */
-body{
-	font-family: "Roboto", sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.clear{
+	clear: both;
 }
 /* HEADER */
 .header{
-	top: 0;
+	position: fixed;
+	background: transparent;
 	left: 0;
-	width: 100%;
-	position: absolute;
+	right: 0;
+	z-index: 99;
+}
+.header__logo{
+	float: left;
+	height: 130px;
+	display: table;
+  	vertical-align: middle;
 }
 .header__content{
-	width: 100%;
-	margin: 0 auto;
+	padding: 50px;
+}
+.header__nav, .btn{
+	float: right;
+}
+.header__nav > ul{
 	display: flex;
-	justify-content: space-evenly;
 	align-items: center;
-	padding: 55px;
 }
-.header__content li a{
-	padding: 55px 15px;
-	position: relative;
-	text-transform: capitalize;
+.header__nav a{
+	color: #070120;
+}
+.header__content nav > ul > li{
+	padding: 22px 18px;
+	font-size: 1rem;
+	font-weight: 700;
+	color: #070120;
+	font-size: 1rem;
+	transition: all .5s;
 	cursor: pointer;
-	line-height: 1.35;
 }
-.header__content li{
-	list-style: none;
-	display: inline;
-	margin: 0;
+.header__nav > ul > li > a {
+	display: inline-block;
+	margin-right: 3px;
+  }
+.header__nav > ul > li > i {
+	display: inline-block;
+  }
+.header__nav > ul > li:hover > a {
+	color: #f55f8d;
+	animation: animation__nav 0.5s;
+  }
+
+.header__nav li:hover {
+	color: #f55f8d;
+  }
+.btn{
+	padding: 1.4rem 1.8rem;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    background-image: linear-gradient(to left, #f55f8d, #f8ae56, #f55f8d);
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.5s;
+    background-size: 200%;
 }
-.header__content a{
-	text-decoration: none;
-	color: #262F5A;
+.btn:hover{
+	background-position: right;
 }
-.header__content button{
-	padding: 20px 35px;
-	text-transform: uppercase;
-	font-size: 15px;
-	font-weight: 500;
-	line-height: 1.2;
-	color: #FFFFFF;
-	background-color: #F55F8D;
-	border: solid 1px #F55F8D;
-	border-radius: 30px !important;
-}
+/* BANNER */

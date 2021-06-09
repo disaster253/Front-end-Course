@@ -87,6 +87,10 @@ header{
 .carousel__content button:hover{
     background-color: #af2239;
 }
+.carousel__arrow i{
+	animation: downMove 3s linear 0s infinite ;
+	font-size: 3rem;
+}
 
 /* SERVICES */
 .services{
@@ -330,4 +334,80 @@ grid-template-columns: repeat(4,1fr,);
 }
 .experience__content video, .experience__content iframe{
 	width: 100%;
+}
+/* CONTACT */
+.contact__content{
+	width: 70%;
+	margin: auto;
+	display: flex;
+
+}
+.contact__map{
+	width: 60%;
+}
+.contact__form{
+	width: 40%;
+}
+.contact__form form{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: space-between;
+}
+.contact__form input{
+	padding: 1em;
+}
+.contact__form textarea{
+	padding: 1em;
+}
+.contact__form input:focus{
+	outline: none;
+	border: none;
+	box-shadow: 0 0 0 0;
+}
+/* BACK TO TOP */
+.backToTop{
+	/* thẻ a là inline k xét được kích thước */
+	/* đổi tính chất thẻ sang thẻ block */
+	display: block;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	line-height: 75px;
+	background-color: rgba(0,0,0,0.25);
+	color: white;
+	font-size: 2rem;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	opacity: 0;
+	visibility: hidden;
+}
+.cd-top--is-visible { 
+	visibility: visible;
+	opacity: 1;
+  }
+  /* khai báo loạt chuyển động */
+	/* from ... to  */
+	/* 0% ... 100% */
+@keyframes downMove{
+	/* Vị trí ban đầu */
+	from{
+		opacity: 1;
+		transform: translateY(0);
+	}
+	/* Vị trí kết thúc */
+	to{
+		opacity: 0;
+		transform: translateY(50px);
+	}
+}
+@keyframes rotateMove{
+	0%{}
+	50%{
+		transform:translateY(25px) rotate(deg);
+	}
+	100%{
+		transform: translateY(50px) rotate(0deg);
+	}
 }
