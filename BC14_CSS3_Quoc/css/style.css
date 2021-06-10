@@ -186,5 +186,47 @@ a {
 	background-image: url(../img/bg2.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
+	padding: 100px;
 	overflow: hidden;
+}
+.services__head{
+	text-align: center;
+}
+.services__head h6{
+	font-size: 1.5rem;
+	color: #f55f8d;
+}
+.services__head h2{
+	font-size: 4rem;
+	line-height: 1.2;
+	font-weight: 800;
+	margin-bottom: 50px;
+}
+.services__content{
+	display: flex;
+}
+.services__item{
+	text-align: center;
+	background-color: #FFFFFF;
+	padding: 30px;
+	box-shadow: 0 0 60px 0 rgb(0 0 0 / 10%);
+	border-radius: 10px;
+	transition: all 1s;
+	margin-left: 2.2rem;
+}
+.services__item img{
+	width: 250px;
+}
+.services__item h2{
+	font-size: 1.5rem;
+	font-weight: 800;
+}
+.services__item p{
+	margin-top: 0.5rem;
+    line-height: 1.5;
+    font-weight: 400;
+    opacity: 0.8;
+}
+.services__item:hover{
+	transform: translateY(-15px);
 }
