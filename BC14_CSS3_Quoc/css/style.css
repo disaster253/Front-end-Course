@@ -181,3 +181,10 @@ a {
     transform: rotate(1deg) translate(2px, 2px);
   }
 }
+/* SERVICES */
+.services{
+	background-image: url(../img/bg2.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	overflow: hidden;
+}
