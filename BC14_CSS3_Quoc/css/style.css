@@ -23,14 +23,6 @@ a {
   clear: both;
 }
 /* HEADER */
-.header {
-  position: fixed;
-  background: transparent;
-  width: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-}
 .header__logo {
   float: left;
   height: 130px;
@@ -38,7 +30,13 @@ a {
   vertical-align: middle;
 }
 .header__content {
-  padding: 50px;
+	position: fixed;
+	background-color: white;
+	width: 100%;
+  	padding: 2rem 7rem;
+	z-index: 99;
+	left: 0;
+  	right: 0;
 }
 .header__nav,
 .btn {
@@ -113,7 +111,7 @@ a {
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%;
-  padding-top: 250px;
+  padding-top: 200px;
   overflow: hidden;
 }
 .banner__content {
