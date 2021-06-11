@@ -257,19 +257,19 @@ a {
 	font-size: 1.5rem;
 }
 .rightheader__content h1{
-	font-size: 4rem;
+	font-size: 4.5rem;
 	margin-bottom: 1rem;
 	font-weight: 800;
 }
 .about-right__content p{
-	font-size: 0.9rem;
-	opacity: 0.6;
-	font-weight: 500;
-	line-height: 1.3rem;
+	font-size: 1.3rem;
+	color: #636363;
+	line-height: 1.5rem;
 	margin-bottom: 1rem;
 }
 .about-right__content li{
 	margin-bottom: 1rem;
+	color: #636363;
 }
 .about-right__content li i {
 	display: inline-block;
@@ -280,6 +280,42 @@ a {
 	margin-right: 0.5rem;
 	font-size: 1rem;
   }
-.about-right__content .btn-learn-more{
-	margin-left: 5rem;
+.btn-learn-more{
+	margin-right: 430px;
 }
+/* NUMBWR */
+.number{
+	background-image: url(../img/bg14.png);
+	background-position: center;
+	background-size: 100%;
+	margin-top: 50px;
+	padding: 100px 0;
+}
+.number__content{
+	display: flex;
+}
+.number__item{
+	text-align: center;
+	width: 25%;
+}
+.number__item i{
+	padding: 1rem 1.2rem;
+  	color: white;
+  	font-size: 3rem;
+  	border-radius: 50%;
+  	margin: 0 6.8rem 1rem;
+  	background-image: linear-gradient(to right, #f55f8d, #f8ae56);
+  	display: inline-block;
+}
+.number__item h1,
+.number__item span {
+  color: #f55f8d;
+  font-size: 4rem;
+  line-height: 1;
+  font-weight: 800;
+  display: inline-block;
+}
+.number__item p {
+	font-size: 1.2rem;
+	color: #070120;
+  }
